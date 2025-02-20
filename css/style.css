@@ -1,0 +1,119 @@
+/* Fuentes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Fixed-top del navbar */
+  body {
+    padding-top: 70px;
+  }
+  
+  /* Estilos personalizados para el navbar */
+.custom-navbar {
+    padding-top: 0.1%;
+    padding-bottom: 0.1%;
+  }
+  
+  .custom-navbar .navbar-brand,
+  .custom-navbar .nav-link {
+    padding-top: 0.1%;
+    padding-bottom: 0.1%;
+  }
+  
+  /* Logo en la navbar */
+  .img-logo {
+    max-width: 80px;
+  }
+  
+  /* Sección Hero */
+  .hero-section {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+  }
+  
+  .hero-section .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  /* Animación del dropdown */
+  .dropdown-menu {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(10px);
+    opacity: 0;
+    display: block;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  
+  .nav-item.dropdown.show .dropdown-menu,
+  .nav-item.dropdown:hover .dropdown-menu {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  /* Tarjetas del carrusel */
+  .carousel .card {
+    border: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .carousel .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Sección Blog */
+  #blog .card {
+    border: none;
+    transition: transform 0.3s ease;
+  }
+  
+  #blog .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #222;
+    color: #ccc;
+  }
+  
+  .footer a {
+    color: #ccc;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    color: #fff;
+  }
+  
+  /* Ajustes responsive */
+  @media (max-width: 768px) {
+    .hero-section {
+      height: 70vh;
+    }
+  }
+  
